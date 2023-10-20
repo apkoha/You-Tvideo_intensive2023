@@ -166,7 +166,7 @@ const displayVideo = ( {items: [video]} ) => {
         </p>
         <p class="video__description">${video.snippet.description}</p>
       </div>
-      <button href="./favorite.html" class="video__link favorite ${favoriteIds.includes(video.id) ? "active" : ""}"">
+      <button href="./favorite.html" class="video__link favorite ${favoriteIds.includes(video.id) ? "active" : ""}">
         <span class="video__no-favorite">Избранное</span>
         <span class="video__favorite">В избранном</span>
         <svg class="video__icon">
