@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>You-Tvideo - Удобный видеохостинг для тебя</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/index.css">
+  <script defer src="js/index.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <a href="/index.html" class="header__link">
+        <svg class="header__logo" viewBox="0 0 240 32" role="img" aria-label="Логотип сервиса You-Tvideo">
+          <use xlink:href="/image/sprite.svg#logo-orange"></use>
+        </svg>
+      </a>
+      <a href="/favorite.html" class="header__link header__link_favorite" href="/favorite.html">
+        <span class="header__link-text">Избранное</span>
+        <svg class="header_icon">
+          <use xlink:href="/image/sprite.svg#star-ob"></use>
+        </svg>
+      </a>
+    </div>
+  </header>
+  <main>
+    <section class="search">
+      <div class="container">
+        <form class="search__form">
+          <input class="search__input" type="search" placeholder="Найти видео...">
+          <button class="search_btn" type="submit">
+            <span>поиск</span>
+            <svg class="search__icon">
+              <use xlink:href="/image/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </section>
+    <section class="video">
+      <div class="container">
+        <div class="video__player">
+          <iframe class="video__iframe" width="560" height="315" src="https://www.youtube.com/embed/hlgbyPdIx4Q?si=w1peTg-LLVkvHZ4a"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+          </div>
+          <div class="video__container">
+            <div class="video__content">
+              <h2 class="video__tittle">Где найти гоночные шины Красноглазки Mad Max</h2>
+              <p class="video__channel">PROZAPAS</p>
+              <p class="video__info">
+                <span class="video__views">1,7 тыс. просмотров</span>
+                <span class="video__date">3 года назад</span>
+              </p>
+              <p class="video__description">
+                Стримы тут - <a href="https://www.twitch.tv/prozapas_s">https://www.twitch.tv/prozapas_s</a> Жду Вас!
+              </p>
+            </div>
+            <button href="/favorite.html" class="video__link favorite">
+              <span class="video__no-favorite">Избранное</span>
+              <span class="video__favorite">В избранном</span>
+              <svg class="video__icon">
+                <use xlink:href="/image/sprite.svg#star-ob"></use>
+              </svg>
+            </button>
+          </div>
+      </div>
+    </section>
+    <section class="video-list">
+      <div class="container">
+        <h2 class="video-list__tittle">Похожие видео</h2>
+        <ul class="video-list__items">
+          <li class="video-list__item">
+            <article class="video-card">
+              <a href="#" class="video-card__link">
+                <img src="image/img1.jpg" class="video-card__thumbnail" alt="Превью видео Философия Идущего к реке">
+              </a>
+              <h3 class="video-card__tittle">Философия Идущего к реке</h3>
+              <p class="video-card__channel">Правое полушарие интроверта</p>
+              <p class="video-card__duration">31 мин 25 сек</p>
+              <button class="video-card__favorite" type="button">
+                <svg class="video-card__icon">
+                  <use class="star-o" xlink:href="/image/sprite.svg#star-ob"></use>
+                  <use class="star" xlink:href="/image/sprite.svg#star"></use>
+                </svg>
+              </button>
+            </article>
+          </li>
+          <li class="video-list__item">
+            <article class="video-card">
+              <a href="#" class="video-card__link">
+                <img src="image/img2.jpg" class="video-card__thumbnail" alt="Превью видео Как выжить в Средние века?">
+              </a>
+              <h3 class="video-card__tittle">Как выжить в Средние века?</h3>
+              <p class="video-card__channel">Правое полушарие интроверта</p>
+              <p class="video-card__duration">31 мин 25 сек</p>
+              <button class="video-card__favorite video-card__favorite_active" type="button" aria-label="Добавить в избранное">
+                <svg class="video-card__icon">
+                  <use class="star-o" xlink:href="/image/sprite.svg#star-ob"></use>
+                  <use class="star" xlink:href="/image/sprite.svg#star"></use>
+                </svg>
+              </button>
+            </article>
+          </li>
+          <li class="video-list__item">
+            <article class="video-card">
+              <a href="#" class="video-card__link">
+                <img src="image/img1.jpg" class="video-card__thumbnail" alt="Превью видео Философия Идущего к реке">
+              </a>
+              <h3 class="video-card__tittle">Философия Идущего к реке</h3>
+              <p class="video-card__channel">Правое полушарие интроверта</p>
+              <p class="video-card__duration">31 мин 25 сек</p>
+              <button class="video-card__favorite" type="button">
+                <svg class="video-card__icon">
+                  <use class="star-o" xlink:href="/image/sprite.svg#star-ob"></use>
+                  <use class="star" xlink:href="/image/sprite.svg#star"></use>
+                </svg>
+              </button>
+            </article>
+          </li>
+          <li class="video-list__item">
+            <article class="video-card">
+              <a href="#" class="video-card__link">
+                <img src="image/img1.jpg" class="video-card__thumbnail" alt="Превью видео Философия Идущего к реке">
+              </a>
+              <h3 class="video-card__tittle">Философия Идущего к реке</h3>
+              <p class="video-card__channel">Правое полушарие интроверта</p>
+              <p class="video-card__duration">31 мин 25 сек</p>
+              <button class="video-card__favorite" type="button">
+                <svg class="video-card__icon">
+                  <use class="star-o" xlink:href="/image/sprite.svg#star-ob"></use>
+                  <use class="star" xlink:href="/image/sprite.svg#star"></use>
+                </svg>
+              </button>
+            </article>
+          </li>
+          <li class="video-list__item">
+            <article class="video-card">
+              <a href="#" class="video-card__link">
+                <img src="image/img2.jpg" class="video-card__thumbnail" alt="Превью видео Как выжить в Средние века?">
+              </a>
+              <h3 class="video-card__tittle">Как выжить в Средние века?</h3>
+              <p class="video-card__channel">Правое полушарие интроверта</p>
+              <p class="video-card__duration">31 мин 25 сек</p>
+              <button class="video-card__favorite video-card__favorite_active" type="button" aria-label="Добавить в избранное">
+                <svg class="video-card__icon">
+                  <use class="star-o" xlink:href="/image/sprite.svg#star-ob"></use>
+                  <use class="star" xlink:href="/image/sprite.svg#star"></use>
+                </svg>
+              </button>
+            </article>
+          </li>
+          <li class="video-list__item">
+            <article class="video-card">
+              <a href="#" class="video-card__link">
+                <img src="image/img2.jpg" class="video-card__thumbnail" alt="Превью видео Как выжить в Средние века?">
+              </a>
+              <h3 class="video-card__tittle">Как выжить в Средние века?</h3>
+              <p class="video-card__channel">Правое полушарие интроверта</p>
+              <p class="video-card__duration">31 мин 25 сек</p>
+              <button class="video-card__favorite video-card__favorite_active" type="button" aria-label="Добавить в избранное">
+                <svg class="video-card__icon">
+                  <use class="star-o" xlink:href="/image/sprite.svg#star-ob"></use>
+                  <use class="star" xlink:href="/image/sprite.svg#star"></use>
+                </svg>
+              </button>
+            </article>
+          </li>
+          <li class="video-list__item">
+            <article class="video-card">
+              <a href="#" class="video-card__link">
+                <img src="image/img2.jpg" class="video-card__thumbnail" alt="Превью видео Как выжить в Средние века?">
+              </a>
+              <h3 class="video-card__tittle">Как выжить в Средние века?</h3>
+              <p class="video-card__channel">Правое полушарие интроверта</p>
+              <p class="video-card__duration">31 мин 25 сек</p>
+              <button class="video-card__favorite video-card__favorite_active" type="button" aria-label="Добавить в избранное">
+                <svg class="video-card__icon">
+                  <use class="star-o" xlink:href="/image/sprite.svg#star-ob"></use>
+                  <use class="star" xlink:href="/image/sprite.svg#star"></use>
+                </svg>
+              </button>
+            </article>
+          </li>
+          <li class="video-list__item">
+            <article class="video-card">
+              <a href="#" class="video-card__link">
+                <img src="image/img2.jpg" class="video-card__thumbnail" alt="Превью видео Как выжить в Средние века?">
+              </a>
+              <h3 class="video-card__tittle">Как выжить в Средние века?</h3>
+              <p class="video-card__channel">Правое полушарие интроверта</p>
+              <p class="video-card__duration">31 мин 25 сек</p>
+              <button class="video-card__favorite video-card__favorite_active" type="button" aria-label="Добавить в избранное">
+                <svg class="video-card__icon">
+                  <use class="star-o" xlink:href="/image/sprite.svg#star-ob"></use>
+                  <use class="star" xlink:href="/image/sprite.svg#star"></use>
+                </svg>
+              </button>
+            </article>
+          </li>
+          <li class="video-list__item">
+            <article class="video-card">
+              <a href="#" class="video-card__link">
+                <img src="image/img2.jpg" class="video-card__thumbnail" alt="Превью видео Как выжить в Средние века?">
+              </a>
+              <h3 class="video-card__tittle">Как выжить в Средние века?</h3>
+              <p class="video-card__channel">Правое полушарие интроверта</p>
+              <p class="video-card__duration">31 мин 25 сек</p>
+              <button class="video-card__favorite video-card__favorite_active" type="button" aria-label="Добавить в избранное">
+                <svg class="video-card__icon">
+                  <use class="star-o" xlink:href="/image/sprite.svg#star-ob"></use>
+                  <use class="star" xlink:href="/image/sprite.svg#star"></use>
+                </svg>
+              </button>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer__container">
+      <a href="/index.html" class="footer__link footer__link_logo">
+        <svg class="footer__logo" viewBox="0 0 305 40" role="img" aria-label="Логотип сервиса You-Tvideo">
+          <use xlink:href="/image/sprite.svg#logo-white"></use>
+        </svg>
+      </a>
+      <div class="container footer__developer__info">
+        <ul class="container footer__developers">
+          <li class="footer__developers-item">
+            Designer:<a class="footer__developers-link" href="https://t.me/Mrshmallowww" target="_blank" rel="noopener">
+              Anastasia Ilina</a>
+          </li>
+          <li class="footer__developers-item">
+            Developer: Akira Kurosawa
+          </li>
+        </ul>
+        <p class="container footer__copyright">© You-Tvideo, 2023</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
