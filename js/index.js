@@ -119,20 +119,20 @@ const displayListVideo = (videos) => {
     console.log("video: ", video)
     li.innerHTML = `
     <article class="video-card">
-       <a href="/video.html?id=${video.id}" class="video-card__link">
+       <a href="./video.html?id=${video.id}" class="video-card__link">
          <img src="${
           video.snippet.thumbnails.standart?.url ||
           video.snippet.thumbnails.high?.url}" class="video-card__thumbnail" alt="Превью видео ${video.snippet.title}">
        </a>
-       <h3 class="video-card__tittle">Как выжить в Средние века?</h3>
+       <h3 class="video-card__tittle">${video.snippet.title}</h3>
        <p class="video-card__channel">${video.snippet.channelTitle}</p>
        <p class="video-card__duration">${convertISOToReadbleDuration(video.contentDetails.duration)}</p>
        <button class="video-card__favorite favorite ${favoriteIds.includes(video.id) ? "active" : ""}" type="button"
         aria-label="Добавить в избранное, ${video.snippet.title}"
        data-video-id="${video.id}">
          <svg class="video-card__icon">
-           <use class="star-o" xlink:href="/image/sprite.svg#star-ob"></use>
-           <use class="star" xlink:href="/image/sprite.svg#star"></use>
+           <use class="star-o" xlink:href="./image/sprite.svg#star-ob"></use>
+           <use class="star" xlink:href="./image/sprite.svg#star"></use>
          </svg>
        </button>
     </article>
@@ -166,11 +166,11 @@ const displayVideo = ( {items: [video]} ) => {
         </p>
         <p class="video__description">${video.snippet.description}</p>
       </div>
-      <button href="/favorite.html class="video__link favorite ${favoriteIds.includes(video.id) ? "active" : ""}"">
+      <button href="./favorite.html class="video__link favorite ${favoriteIds.includes(video.id) ? "active" : ""}"">
         <span class="video__no-favorite">Избранное</span>
         <span class="video__favorite">В избранном</span>
         <svg class="video__icon">
-          <use xlink:href="/image/sprite.svg#star-ob"></use>
+          <use xlink:href="./image/sprite.svg#star-ob"></use>
         </svg>
       </button>
   </div>
