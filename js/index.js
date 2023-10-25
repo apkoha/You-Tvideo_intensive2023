@@ -1,7 +1,8 @@
 const API_KEY = 'AIzaSyCKZY0pEBj3TI11EpCjR_eE2FpU2KIlu9Q';
 const VIDEOS_URL = 'https://www.googleapis.com/youtube/v3/videos';
 const SEARCH_URL = 'https://www.googleapis.com/youtube/v3/search';
-const router = new Navigo("/", { hash:true});
+//const router = new Navigo("/", { hash:true});
+const router = new Navigo("/You-Tvideo_intensive2023", { hash:true});
 
 const main = document.querySelector("main");
 
