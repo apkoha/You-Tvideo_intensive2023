@@ -6,6 +6,7 @@
   <title>You-Tvideo - Удобный видеохостинг для тебя</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/index.css">
+  <script defer src="js/navigo.min.js"></script>
   <script defer src="js/index.js"></script>
 </head>
 <body>
@@ -22,7 +23,7 @@
           <svg class="hero__logo" viewBox="0 0 305 40" role="img" aria-label="Логотип сервиса You-Tvideo">
             <use xlink:href="./image/sprite.svg#logo-white"></use>
           </svg>
-          <h1 class="hero__tittle">Смотри. Загружай. Создавай</h1>
+          <h1 class="hero__title">Смотри. Загружай. Создавай</h1>
           <p class="hero__tageline">Удобный видеохостинг для тебя</p>
         </div>
       </div>
@@ -30,8 +31,8 @@
     <section class="search">
       <div class="container">
         <form class="search__form">
-          <input class="search__input" type="search" placeholder="Найти видео...">
-          <button class="search_btn" type="submit">
+          <input class="search__input" type="search" name="search" placeholder="Найти видео...">
+          <button class="search__btn" type="submit">
             <span>поиск</span>
             <svg class="search__icon">
               <use xlink:href="./image/sprite.svg#search"></use>
@@ -42,19 +43,19 @@
     </section>
     <section class="video-list">
       <div class="container">
-        <h2 class="video-list__tittle">В тренде</h2>
+        <h2 class="video-list__title">В тренде</h2>
         <ul class="video-list__items">
           <li class="video-list__item">
             <article class="video-card">
               <a href="#" class="video-card__link">
                 <img src="image/img1.jpg" class="video-card__thumbnail" alt="Превью видео Философия Идущего к реке">
               </a>
-              <h3 class="video-card__tittle">Философия Идущего к реке</h3>
+              <h3 class="video-card__title">Философия Идущего к реке</h3>
               <p class="video-card__channel">Правое полушарие интроверта</p>
               <p class="video-card__duration">31 мин 25 сек</p>
               <button class="video-card__favorite" type="button">
                 <svg class="video-card__icon">
-                  <use class="star-o" xlink:href=./image/sprite.svg#star-ob"></use>
+                  <use class="star-o" xlink:href="./image/sprite.svg#star-bw"></use>
                   <use class="star" xlink:href="./image/sprite.svg#star"></use>
                 </svg>
               </button>
@@ -65,12 +66,12 @@
               <a href="#" class="video-card__link">
                 <img src="image/img2.jpg" class="video-card__thumbnail" alt="Превью видео Как выжить в Средние века?">
               </a>
-              <h3 class="video-card__tittle">Как выжить в Средние века?</h3>
+              <h3 class="video-card__title">Как выжить в Средние века?</h3>
               <p class="video-card__channel">Правое полушарие интроверта</p>
               <p class="video-card__duration">31 мин 25 сек</p>
               <button class="video-card__favorite video-card__favorite_active" type="button" aria-label="Добавить в избранное">
                 <svg class="video-card__icon">
-                  <use class="star-o" xlink:href="./image/sprite.svg#star-ob"></use>
+                  <use class="star-o" xlink:href="./image/sprite.svg#star-bw"></use>
                   <use class="star" xlink:href="./image/sprite.svg#star"></use>
                 </svg>
               </button>
@@ -81,12 +82,12 @@
               <a href="#" class="video-card__link">
                 <img src="image/img1.jpg" class="video-card__thumbnail" alt="Превью видео Философия Идущего к реке">
               </a>
-              <h3 class="video-card__tittle">Философия Идущего к реке</h3>
+              <h3 class="video-card__title">Философия Идущего к реке</h3>
               <p class="video-card__channel">Правое полушарие интроверта</p>
               <p class="video-card__duration">31 мин 25 сек</p>
               <button class="video-card__favorite" type="button">
                 <svg class="video-card__icon">
-                  <use class="star-o" xlink:href="./image/sprite.svg#star-ob"></use>
+                  <use class="star-o" xlink:href="./image/sprite.svg#star-bw"></use>
                   <use class="star" xlink:href="./image/sprite.svg#star"></use>
                 </svg>
               </button>
@@ -97,12 +98,12 @@
               <a href="#" class="video-card__link">
                 <img src="image/img1.jpg" class="video-card__thumbnail" alt="Превью видео Философия Идущего к реке">
               </a>
-              <h3 class="video-card__tittle">Философия Идущего к реке</h3>
+              <h3 class="video-card__title">Философия Идущего к реке</h3>
               <p class="video-card__channel">Правое полушарие интроверта</p>
               <p class="video-card__duration">31 мин 25 сек</p>
               <button class="video-card__favorite" type="button">
                 <svg class="video-card__icon">
-                  <use class="star-o" xlink:href="./image/sprite.svg#star-ob"></use>
+                  <use class="star-o" xlink:href="./image/sprite.svg#star-bw"></use>
                   <use class="star" xlink:href="./image/sprite.svg#star"></use>
                 </svg>
               </button>
@@ -113,12 +114,12 @@
               <a href="#" class="video-card__link">
                 <img src="image/img2.jpg" class="video-card__thumbnail" alt="Превью видео Как выжить в Средние века?">
               </a>
-              <h3 class="video-card__tittle">Как выжить в Средние века?</h3>
+              <h3 class="video-card__title">Как выжить в Средние века?</h3>
               <p class="video-card__channel">Правое полушарие интроверта</p>
               <p class="video-card__duration">31 мин 25 сек</p>
               <button class="video-card__favorite video-card__favorite_active" type="button" aria-label="Добавить в избранное">
                 <svg class="video-card__icon">
-                  <use class="star-o" xlink:href="./image/sprite.svg#star-ob"></use>
+                  <use class="star-o" xlink:href="./image/sprite.svg#star-bw"></use>
                   <use class="star" xlink:href="./image/sprite.svg#star"></use>
                 </svg>
               </button>
@@ -129,12 +130,12 @@
               <a href="#" class="video-card__link">
                 <img src="image/img2.jpg" class="video-card__thumbnail" alt="Превью видео Как выжить в Средние века?">
               </a>
-              <h3 class="video-card__tittle">Как выжить в Средние века?</h3>
+              <h3 class="video-card__title">Как выжить в Средние века?</h3>
               <p class="video-card__channel">Правое полушарие интроверта</p>
               <p class="video-card__duration">31 мин 25 сек</p>
               <button class="video-card__favorite video-card__favorite_active" type="button" aria-label="Добавить в избранное">
                 <svg class="video-card__icon">
-                  <use class="star-o" xlink:href="./image/sprite.svg#star-ob"></use>
+                  <use class="star-o" xlink:href="./image/sprite.svg#star-bw"></use>
                   <use class="star" xlink:href="./image/sprite.svg#star"></use>
                 </svg>
               </button>
@@ -145,12 +146,12 @@
               <a href="#" class="video-card__link">
                 <img src="image/img2.jpg" class="video-card__thumbnail" alt="Превью видео Как выжить в Средние века?">
               </a>
-              <h3 class="video-card__tittle">Как выжить в Средние века?</h3>
+              <h3 class="video-card__title">Как выжить в Средние века?</h3>
               <p class="video-card__channel">Правое полушарие интроверта</p>
               <p class="video-card__duration">31 мин 25 сек</p>
               <button class="video-card__favorite video-card__favorite_active" type="button" aria-label="Добавить в избранное">
                 <svg class="video-card__icon">
-                  <use class="star-o" xlink:href="./image/sprite.svg#star-ob"></use>
+                  <use class="star-o" xlink:href="./image/sprite.svg#star-bw"></use>
                   <use class="star" xlink:href="./image/sprite.svg#star"></use>
                 </svg>
               </button>
@@ -161,12 +162,12 @@
               <a href="#" class="video-card__link">
                 <img src="image/img2.jpg" class="video-card__thumbnail" alt="Превью видео Как выжить в Средние века?">
               </a>
-              <h3 class="video-card__tittle">Как выжить в Средние века?</h3>
+              <h3 class="video-card__title">Как выжить в Средние века?</h3>
               <p class="video-card__channel">Правое полушарие интроверта</p>
               <p class="video-card__duration">31 мин 25 сек</p>
               <button class="video-card__favorite video-card__favorite_active" type="button" aria-label="Добавить в избранное">
                 <svg class="video-card__icon">
-                  <use class="star-o" xlink:href="./image/sprite.svg#star-ob"></use>
+                  <use class="star-o" xlink:href="./image/sprite.svg#star-bw"></use>
                   <use class="star" xlink:href="./image/sprite.svg#star"></use>
                 </svg>
               </button>
@@ -177,12 +178,12 @@
               <a href="#" class="video-card__link">
                 <img src="image/img2.jpg" class="video-card__thumbnail" alt="Превью видео Как выжить в Средние века?">
               </a>
-              <h3 class="video-card__tittle">Как выжить в Средние века?</h3>
+              <h3 class="video-card__title">Как выжить в Средние века?</h3>
               <p class="video-card__channel">Правое полушарие интроверта</p>
               <p class="video-card__duration">31 мин 25 сек</p>
               <button class="video-card__favorite video-card__favorite_active" type="button" aria-label="Добавить в избранное">
                 <svg class="video-card__icon">
-                  <use class="star-o" xlink:href="./image/sprite.svg#star-ob"></use>
+                  <use class="star-o" xlink:href="./image/sprite.svg#star-bw"></use>
                   <use class="star" xlink:href="./image/sprite.svg#star"></use>
                 </svg>
               </button>
@@ -194,7 +195,8 @@
   </main>
   <footer class="footer">
     <div class="container footer__container">
-      <a href="/index.html" class="footer__link footer__link_logo">
+      <a href="#" class="footer__link footer__link_logo">
+      <!-- <a href="/index.html" class="footer__link footer__link_logo"> -->
         <svg class="footer__logo" viewBox="0 0 305 40" role="img" aria-label="Логотип сервиса You-Tvideo">
           <use xlink:href="./image/sprite.svg#logo-white"></use>
         </svg>
