@@ -437,7 +437,7 @@ const searchRoute = async (ctx) => {
 
 const init = () => {
 router.on({
-  "/": indexRoute,
+  "/You-Tvideo_intensive2023": indexRoute,
   "/video/:id": videoRoute,
   "/favorite": favoriteRoute,
   "/search": searchRoute,
