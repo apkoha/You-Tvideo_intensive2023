@@ -1,8 +1,7 @@
 const API_KEY = 'AIzaSyCKZY0pEBj3TI11EpCjR_eE2FpU2KIlu9Q';
 const VIDEOS_URL = 'https://www.googleapis.com/youtube/v3/videos';
 const SEARCH_URL = 'https://www.googleapis.com/youtube/v3/search';
-//const router = new Navigo("/", { hash:true});
-const router = new Navigo("/You-Tvideo_intensive2023", { hash:true});
+const router = new Navigo("/", { hash:true});
 
 const main = document.querySelector("main");
 
@@ -28,9 +27,6 @@ const preload = {
 };
 
 preload.init();
-
-// при искользовании Navigo следующая строка не нужна
-// const videoListItems = document.querySelector(".video-list__items");
 
 //преобразование ISO формата даты. 1 вариант https://youtu.be/yQm9Onk6KvQ
 //преобразование ISO формата даты. 2 вариант https://youtu.be/KRlHF0BqEYo?list=PLTWgvuj0rgG3sNPqIpvbmIDdAs3RrEoTI&t=1494
@@ -437,7 +433,8 @@ const searchRoute = async (ctx) => {
 
 const init = () => {
 router.on({
-  "/You-Tvideo_intensive2023": indexRoute,
+  "/You-Tvideo_intensive2023": indexRoute, // путь для хостинга в моём репозитарии github.
+  // "/": indexRoute,
   "/video/:id": videoRoute,
   "/favorite": favoriteRoute,
   "/search": searchRoute,

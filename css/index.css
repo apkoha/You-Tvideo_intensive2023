@@ -456,6 +456,20 @@ input[type="search"] {
   color: #FF6A00;
 }
 
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  width: 360px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.pagination__arrow {
+
+}
+
 @media (width <= 1024px) {
   .container {
     --container-width: 942px;
